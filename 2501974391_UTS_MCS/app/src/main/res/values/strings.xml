@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MCSol Team App</string>
+    <string name="logo">Logo</string>
+
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="schedule">Schedule</string>
+    <string name="history">History</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="login_here">Login here</string>
+    <string name="register">Register</string>
+    <string name="register_here">Register here</string>
+    <string name="no_account">No account?</string>
+    <string name="have_account">Have account?</string>
+    <string name="new_account">New Account</string>
+
+
+    <string name="next_game">Next Game</string>
+    <string name="latest_news">Latest News</string>
+
+    <string name="article_title">Article Title</string>
+    <string name="published_on">Published on %1$s</string>
+    <string name="article_image">Thumbnail</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+
+    <string name="upcoming_games">Upcoming Games</string>
+    <string name="purchase_history">Purchase History</string>
+
+
+    <string name="game_name">Game</string>
+    <string name="venue">At %1$s</string>
+    <string name="date_time">%1$s | %2$s WIB</string>
+    <string name="day_min">D-%1$d</string>
+    <string name="buy_ticket">Buy Ticket</string>
+
+    <string name="date">Buy Date</string>
+    <string name="order_number">tck0%1$d</string>
+    <string name="ticket_type">Type: %1$s</string>
+    <string name="qty">Qty: %1$d</string>
+    <string name="total_price">Total: %1$s</string>
+    <string name="total_price_text">Total Price</string>
+
+    <string name="choose_ticket_type">Ticket Type</string>
+    <string name="spinner">Type</string>
+    <string name="qty_text">Qty</string>
+    <string name="default_qty">0</string>
+    <string name="init_qty">1</string>
+    <string name="buy">Buy</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="dropDownOption">
+        <item>Regular</item>
+        <item>VIP</item>
+        <item>VVIP</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

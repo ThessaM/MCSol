@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_extrabold"
+            android:textSize="25sp"
+            android:padding="2dp"
+            android:text="@string/buy_ticket"
+            />
+
+        <View
+            android:id="@+id/dialog_dashed_line"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/dialog_title"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/line_dash"
+            />
+
+        <TextView
+            android:id="@+id/dialog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_dashed_line"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/game_name"
+            />
+
+        <TextView
+            android:id="@+id/dialog_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/venue"
+            />
+
+        <TextView
+            android:id="@+id/dialog_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_venue"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/date_time"
+            />
+
+        <View
+            android:id="@+id/dialog_horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/dialog_dateTime"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/cust_Navy"
+            />
+
+        <TextView
+            android:id="@+id/dialog_Text_chooseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_horizontal_line"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/choose_ticket_type"
+            />
+
+        <Spinner
+            android:id="@+id/dialog_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/dialog_Text_chooseType"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:dropDownWidth="match_parent"
+            android:elevation="8dp"
+            android:contentDescription="@string/spinner"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/dialog_Text_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_spinner"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/qty_text"
+            />
+
+        <EditText
+            android:id="@+id/dialog_edtx_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_Text_qty"
+            android:background="@drawable/cust_edtx_background_input"
+            android:elevation="2dp"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:fontFamily="@font/inter_bold"
+            android:inputType="number|none"
+            android:autofillHints="name"
+            android:hint="@string/default_qty"
+            android:text="@string/init_qty"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/dialog_Text_TotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_edtx_qty"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:text="@string/total_price"
+            />
+
+<!--        <View-->
+<!--            android:id="@+id/dialog_invi_box"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="10dp"-->
+<!--            android:layout_below="@id/dialog_Text_TotalPrice"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@color/transparent"-->
+<!--            />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:layout_below="@id/dialog_Text_TotalPrice"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/cust_button_log_reg"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/buy"
+            tools:ignore="VisualLintButtonSize" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:layout_below="@id/dialog_button_buy"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/cust_button_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/cust_Navy"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/cancel"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

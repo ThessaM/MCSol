@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_history"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_history_text_orderNumber"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/order_number"/>
+
+        <TextView
+            android:id="@+id/item_history_text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/item_history_text_orderNumber"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/date"/>
+
+        <TextView
+            android:id="@+id/item_history_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_history_text_date"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/game_name"/>
+
+        <TextView
+            android:id="@+id/item_history_text_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_history_text_name"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/venue"/>
+
+        <TextView
+            android:id="@+id/item_history_text_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_history_text_venue"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/date_time"/>
+
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/item_history_text_dateTime"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cust_Navy"
+            />
+
+        <TextView
+            android:id="@+id/item_history_text_ticketType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_line"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/ticket_type"/>
+
+        <TextView
+            android:id="@+id/item_history_text_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_history_text_ticketType"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:text="@string/qty"/>
+
+        <TextView
+            android:id="@+id/item_history_text_totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_history_text_qty"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:text="@string/total_price_text"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
